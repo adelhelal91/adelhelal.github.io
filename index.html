@@ -12,18 +12,21 @@
 <body class="bg-gray-100 text-gray-800 font-sans transition-colors duration-500">
 
   <!-- رأس الموقع مع أزرار التبديل -->
-  <header class="bg-blue-900 text-white py-6 text-center relative">
-    <div class="container mx-auto">
+ <header class="bg-blue-900 text-white py-6 text-center">
+  <div class="container mx-auto px-4 flex flex-col sm:flex-row sm:justify-between items-center">
+    <div class="text-center sm:text-right">
       <h1 class="text-3xl font-bold">عادل هلال</h1>
-      <p class="mt-2">مهندس تكنولوجيا المعلومات | الرياض، السعودية</p>
-      <p class="mt-1">📞 +966 506498285 | 📧 eng.adel.helal91@gmail.com</p>
-      <!-- أزرار التبديل -->
-      <div class="absolute top-4 right-4 space-x-2">
-        <button id="langToggle" class="bg-white text-blue-900 px-3 py-1 rounded hover:bg-gray-200">English</button>
-        <button id="modeToggle" class="bg-white text-blue-900 px-3 py-1 rounded hover:bg-gray-200">Dark Mode</button>
-      </div>
+      <p class="mt-1">مهندس تكنولوجيا المعلومات | الرياض، السعودية</p>
+      <p class="mt-1 text-sm">📞 +966 506498285 | 📧 eng.adel.helal91@gmail.com</p>
     </div>
-  </header>
+    <!-- أزرار التبديل -->
+    <div class="mt-4 sm:mt-0 flex space-x-2 rtl:space-x-reverse">
+      <button id="langToggle" class="bg-white text-blue-900 px-4 py-1 rounded hover:bg-gray-200 text-sm">English</button>
+      <button id="modeToggle" class="bg-white text-blue-900 px-4 py-1 rounded hover:bg-gray-200 text-sm">Dark Mode</button>
+    </div>
+  </div>
+</header>
+
 
   <!-- المحتوى الرئيسي -->
   <main class="max-w-5xl mx-auto px-6 py-10">
