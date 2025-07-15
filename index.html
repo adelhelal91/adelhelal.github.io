@@ -5,109 +5,233 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>عادل هلال - السيرة الذاتية</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* يمكنك إضافة تعديلات إضافية هنا */
+  </style>
 </head>
-<body class="bg-gray-100 text-gray-800 font-sans">
+<body class="bg-gray-100 text-gray-800 font-sans transition-colors duration-500">
 
-  <!-- Header -->
-  <header class="bg-blue-900 text-white py-10 text-center">
-    <h1 class="text-4xl font-bold">عادل هلال</h1>
-    <p class="text-lg mt-2">مهندس تقنية معلومات | الرياض، المملكة العربية السعودية</p>
-    <p class="mt-1">📞 +966 506498285 | 📧 eng.adel.helal91@gmail.com</p>
+  <!-- رأس الموقع مع أزرار التبديل -->
+  <header class="bg-blue-900 text-white py-6 text-center relative">
+    <div class="container mx-auto">
+      <h1 class="text-3xl font-bold">عادل هلال</h1>
+      <p class="mt-2">مهندس تكنولوجيا المعلومات | الرياض، السعودية</p>
+      <p class="mt-1">📞 +966 506498285 | 📧 eng.adel.helal91@gmail.com</p>
+      <!-- أزرار التبديل -->
+      <div class="absolute top-4 right-4 space-x-2">
+        <button id="langToggle" class="bg-white text-blue-900 px-3 py-1 rounded hover:bg-gray-200">English</button>
+        <button id="modeToggle" class="bg-white text-blue-900 px-3 py-1 rounded hover:bg-gray-200">Dark Mode</button>
+      </div>
+    </div>
   </header>
 
-  <!-- Main content -->
+  <!-- المحتوى الرئيسي -->
   <main class="max-w-5xl mx-auto px-6 py-10">
+    <!-- زر تحميل ملف الـ PDF -->
+   <!-- داخل قسم زر التحميل (استبدل القسم القديم بهذا الجديد) -->
+<div class="text-center mb-8">
+  <a id="downloadBtn" href="Adel_Helal_Resume.pdf" download class="inline-block bg-blue-900 text-white px-6 py-2 rounded hover:bg-blue-800 transition-colors text-sm sm:text-base md:text-lg">
+    تحميل السيرة الذاتية PDF
+  </a>
+</div>
 
-    <!-- Objective -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-blue-900 border-b pb-2 mb-3">الهدف</h2>
-      <p>
-        أنا مهندس تقنية معلومات ذو خبرة 5 سنوات، أبحث عن فرصة في شركة مرموقة حيث يمكنني المساهمة في نموها
-        بينما أطور مهاراتي ومعرفتي.
-      </p>
+    </div>
+    
+    <!-- النسخة العربية -->
+    <section id="arabicVersion">
+      <!-- الهدف -->
+      <div class="mb-10">
+        <h2 class="text-2xl font-semibold text-blue-900 border-b pb-2 mb-3">الهدف</h2>
+        <p>
+          أنا مهندس تكنولوجيا معلومات مجتهد بخبرة 5 سنوات في مجال تقنية المعلومات، أسعى للحصول على فرصة عمل في شركة مرموقة أساهم في نموها وأطور مهاراتي ومعارفي.
+        </p>
+      </div>
+      <!-- التعليم -->
+      <div class="mb-10">
+        <h2 class="text-2xl font-semibold text-blue-900 border-b pb-2 mb-3">التعليم</h2>
+        <p>
+          <strong>بكالوريوس في هندسة تقنية المعلومات</strong><br>
+          جامعة تعز، اليمن – يوليو 2015
+        </p>
+      </div>
+      <!-- الخبرة العملية -->
+      <div class="mb-10">
+        <h2 class="text-2xl font-semibold text-blue-900 border-b pb-2 mb-3">الخبرة العملية</h2>
+        <h3 class="text-xl font-bold">مسؤول النظام ومدير تقنية المعلومات</h3>
+        <p class="text-gray-700">شركة الماجدي للصرافة | 2019 – 2024</p>
+        <ul class="list-disc list-inside mt-2 space-y-1">
+          <li>عمليات الدعم الفني، تشخيص الأجهزة والبرمجيات، وصيانة الأنظمة.</li>
+          <li>إدارة نظام ويندوز سيرفر.</li>
+          <li>توظيف، تدريب، وإدارة القوى العاملة.</li>
+          <li>الوقاية من الاحتيال المالي، التدقيق الداخلي، وتنفيذ السياسات.</li>
+          <li>خدمة العملاء ودعم المشتريات.</li>
+        </ul>
+      </div>
+      <!-- المهارات -->
+      <div class="mb-10">
+        <h2 class="text-2xl font-semibold text-blue-900 border-b pb-2 mb-3">المهارات</h2>
+        <ul class="grid grid-cols-2 md:grid-cols-3 gap-2 list-disc list-inside">
+          <li>تطوير الواجهات الأمامية</li>
+          <li>برمجة C++، C#، .NET</li>
+          <li>الحوسبة السحابية</li>
+          <li>تطوير Oracle Fusion</li>
+          <li>تطوير قواعد بيانات SQL Server</li>
+          <li>إدارة الشبكات</li>
+          <li>أدوات CRM</li>
+          <li>أنظمة تشغيل Windows وLinux</li>
+          <li>Microsoft Office والتقنيات الميكروسوفتية</li>
+          <li>مهارات التواصل والعمل الجماعي</li>
+          <li>حل المشكلات والتفاوض</li>
+          <li>القدرة على العمل تحت الضغط</li>
+        </ul>
+      </div>
+      <!-- الشهادات -->
+      <div class="mb-10">
+        <h2 class="text-2xl font-semibold text-blue-900 border-b pb-2 mb-3">الشهادات</h2>
+        <ul class="list-disc list-inside space-y-1">
+          <li>CCNA v7</li>
+          <li>ICDL v6</li>
+          <li>دبلوم اللغة الإنجليزية</li>
+          <li>دبلوم المحاسبة</li>
+          <li>أساسيات الأمن السيبراني</li>
+          <li>أنظمة ERP للتسويق والمحاسبة</li>
+          <li>إدارة خدمة العملاء والموارد البشرية</li>
+        </ul>
+      </div>
+      <!-- بيانات التواصل -->
+      <div class="mb-10">
+        <h2 class="text-2xl font-semibold text-blue-900 border-b pb-2 mb-3">التواصل</h2>
+        <ul>
+          <li>📍 الرياض، السعودية</li>
+          <li>📞 +966 506498285</li>
+          <li>📧 <a href="mailto:eng.adel.helal91@gmail.com" class="text-blue-700 underline">eng.adel.helal91@gmail.com</a></li>
+        </ul>
+      </div>
     </section>
-
-    <!-- Education -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-blue-900 border-b pb-2 mb-3">التعليم</h2>
-      <p>
-        <strong>بكالوريوس في هندسة تقنية المعلومات</strong><br>
-        جامعة تعز، اليمن – يوليو 2015
-      </p>
-    </section>
-
-    <!-- Experience -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-blue-900 border-b pb-2 mb-3">الخبرات العملية</h2>
-      <h3 class="text-xl font-bold">مدير نظم معلومات ومدير IT</h3>
-      <p class="text-gray-700">شركة المجيدي للصرافة | 2019 – 2024</p>
-      <ul class="list-disc list-inside mt-2 space-y-1">
-        <li>دعم فني وتشخيص المشكلات، وصيانة الأنظمة.</li>
-        <li>إدارة أنظمة Windows Server والنظم المساعدة.</li>
-        <li>إدارة التوظيف وتدريب الموظفين.</li>
-        <li>الوقاية من الاحتيال المالي، التدقيق الداخلي، وتنفيذ السياسات.</li>
-        <li>دعم خدمة العملاء والتوريد.</li>
-      </ul>
-    </section>
-
-    <!-- Skills -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-blue-900 border-b pb-2 mb-3">المهارات</h2>
-      <ul class="grid grid-cols-2 md:grid-cols-3 gap-2 list-disc list-inside">
-        <li>تطوير واجهات المستخدم</li>
-        <li>برمجة C++, C#, .NET</li>
-        <li>الحوسبة السحابية</li>
-        <li>تطوير Oracle Fusion</li>
-        <li>تطوير قواعد بيانات SQL Server</li>
-        <li>إدارة الشبكات</li>
-        <li>استخدام أدوات CRM</li>
-        <li>إدارة أنظمة التشغيل Windows وLinux</li>
-        <li>Microsoft Office & Tech Stack</li>
-        <li>مهارات التواصل والعمل الجماعي</li>
-        <li>حل المشكلات والتفاوض</li>
-        <li>القدرة على العمل تحت الضغط</li>
-      </ul>
-    </section>
-
-    <!-- Certifications -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-blue-900 border-b pb-2 mb-3">الشهادات</h2>
-      <ul class="list-disc list-inside space-y-1">
-        <li>CCNA v7</li>
-        <li>ICDL v6</li>
-        <li>دبلوم اللغة الإنجليزية</li>
-        <li>دبلوم المحاسبة</li>
-        <li>أساسيات الأمن السيبراني</li>
-        <li>أنظمة ERP: التسويق والمحاسبة</li>
-        <li>خدمة العملاء وإدارة الموارد البشرية</li>
-      </ul>
-    </section>
-
-    <!-- Contact -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold text-blue-900 border-b pb-2 mb-3">التواصل</h2>
-      <ul>
-        <li>📍 الرياض، المملكة العربية السعودية</li>
-        <li>📞 +966 506498285</li>
-        <li>📧 <a href="mailto:eng.adel.helal91@gmail.com" class="text-blue-700 underline">eng.adel.helal91@gmail.com</a></li>
-        <li>🔗 <a href="https://adelhelal91.github.io/adelhelal.github.io/" target="_blank" class="text-blue-700 underline">GitHub</a></li>
-        <li>🌐 <a href="linkedin.com/in/adel-helal-4a6454353" target="_blank" class="text-blue-700 underline">LinkedIn</a></li>
-      </ul>
-    </section>
-
-    <!-- Download PDF Button -->
-    <section class="mb-10 text-center">
-      <a href="adel helal Resume.pdf" class="bg-blue-900 text-white py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-200">
-        تحميل السيرة الذاتية (PDF)
-      </a>
+    
+    <!-- النسخة الإنجليزية -->
+    <section id="englishVersion" class="hidden" dir="ltr">
+      <!-- Objective -->
+      <div class="mb-10">
+        <h2 class="text-2xl font-semibold text-blue-900 border-b pb-2 mb-3">Objective</h2>
+        <p>
+          I am a hardworking Information Technology Engineer with 5 years of experience in IT, seeking an opportunity in a reputable company where I can contribute to its growth while improving my skills and knowledge.
+        </p>
+      </div>
+      <!-- Education -->
+      <div class="mb-10">
+        <h2 class="text-2xl font-semibold text-blue-900 border-b pb-2 mb-3">Education</h2>
+        <p>
+          <strong>Bachelor's Degree in Information Technology Engineering</strong><br>
+          Taiz University, Yemen – July 2015
+        </p>
+      </div>
+      <!-- Experience -->
+      <div class="mb-10">
+        <h2 class="text-2xl font-semibold text-blue-900 border-b pb-2 mb-3">Experience</h2>
+        <h3 class="text-xl font-bold">System Administrator & IT Manager</h3>
+        <p class="text-gray-700">Almajedi Exchange Company | 2019 – 2024</p>
+        <ul class="list-disc list-inside mt-2 space-y-1">
+          <li>Technical support, hardware/software diagnostics, and system maintenance.</li>
+          <li>Administration of Windows Server and IT systems.</li>
+          <li>Talent acquisition, training, and workforce management.</li>
+          <li>Financial fraud prevention, internal audits, and policy implementation.</li>
+          <li>Customer service and procurement support.</li>
+        </ul>
+      </div>
+      <!-- Skills -->
+      <div class="mb-10">
+        <h2 class="text-2xl font-semibold text-blue-900 border-b pb-2 mb-3">Skills</h2>
+        <ul class="grid grid-cols-2 md:grid-cols-3 gap-2 list-disc list-inside">
+          <li>Front-End Web Development</li>
+          <li>C++, C#, .NET</li>
+          <li>Cloud Computing</li>
+          <li>Oracle Fusion Development</li>
+          <li>SQL Server Database Development</li>
+          <li>Network Administration</li>
+          <li>CRM Tools</li>
+          <li>Windows & Linux OS</li>
+          <li>Microsoft Office & MS Tech Stack</li>
+          <li>Communication & Teamwork</li>
+          <li>Problem Solving & Negotiation</li>
+          <li>Ability to Work Under Pressure</li>
+        </ul>
+      </div>
+      <!-- Certifications -->
+      <div class="mb-10">
+        <h2 class="text-2xl font-semibold text-blue-900 border-b pb-2 mb-3">Certifications</h2>
+        <ul class="list-disc list-inside space-y-1">
+          <li>CCNA v7</li>
+          <li>ICDL v6</li>
+          <li>English Language Diploma</li>
+          <li>Accounting Diploma</li>
+          <li>Cybersecurity Essentials</li>
+          <li>ERP Systems: Marketing & Accounting</li>
+          <li>Customer Service & HR Management</li>
+        </ul>
+      </div>
+      <!-- Contact -->
+      <div class="mb-10">
+        <h2 class="text-2xl font-semibold text-blue-900 border-b pb-2 mb-3">Contact</h2>
+        <ul>
+          <li>📍 Riyadh, Saudi Arabia</li>
+          <li>📞 +966 506498285</li>
+          <li>📧 <a href="mailto:eng.adel.helal91@gmail.com" class="text-blue-700 underline">eng.adel.helal91@gmail.com</a></li>
+        </ul>
+      </div>
     </section>
 
   </main>
 
-  <!-- Footer -->
+  <!-- ذيل الصفحة -->
   <footer class="text-center text-sm text-gray-500 py-6">
     &copy; 2025 - Adel Helal
   </footer>
+
+  <!-- السكريبتات للتحكم في تبديل اللغة والوضع -->
+  <script>
+  const langToggleBtn = document.getElementById('langToggle');
+  const arabicVersion = document.getElementById('arabicVersion');
+  const englishVersion = document.getElementById('englishVersion');
+  const downloadBtn = document.getElementById('downloadBtn');
+
+  langToggleBtn.addEventListener('click', () => {
+    const isArabic = !arabicVersion.classList.contains('hidden');
+
+    if (isArabic) {
+      // Switch to English
+      arabicVersion.classList.add('hidden');
+      englishVersion.classList.remove('hidden');
+      langToggleBtn.textContent = 'العربية';
+      document.documentElement.lang = 'en';
+      document.documentElement.dir = 'ltr';
+      downloadBtn.textContent = 'Download Resume (PDF)';
+    } else {
+      // Switch to Arabic
+      arabicVersion.classList.remove('hidden');
+      englishVersion.classList.add('hidden');
+      langToggleBtn.textContent = 'English';
+      document.documentElement.lang = 'ar';
+      document.documentElement.dir = 'rtl';
+      downloadBtn.textContent = 'تحميل السيرة الذاتية PDF';
+    }
+  });
+
+  // Dark Mode Toggle
+  const modeToggleBtn = document.getElementById('modeToggle');
+  modeToggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+    if (document.body.classList.contains('dark')) {
+      modeToggleBtn.textContent = 'Light Mode';
+      document.body.classList.remove('bg-gray-100', 'text-gray-800');
+      document.body.classList.add('bg-gray-900', 'text-gray-100');
+    } else {
+      modeToggleBtn.textContent = 'Dark Mode';
+      document.body.classList.remove('bg-gray-900', 'text-gray-100');
+      document.body.classList.add('bg-gray-100', 'text-gray-800');
+    }
+  });
+</script>
 
 </body>
 </html>
