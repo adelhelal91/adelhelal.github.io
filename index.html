@@ -13,26 +13,36 @@
 
   <!-- رأس الموقع مع أزرار التبديل -->
 <header class="bg-blue-900 text-white py-6">
-  <div class="container mx-auto px-4 flex flex-col-reverse sm:flex-row sm:items-center sm:justify-between">
+  <div class="container mx-auto px-4 text-center">
     
-    <!-- العنوان الرئيسي -->
-    <div class="w-full text-center sm:text-center mb-4 sm:mb-0">
+    <!-- الاسم والوصف -->
+    <div id="arabicHeader">
       <h1 class="text-3xl font-bold">عادل هلال</h1>
-      <p class="mt-1 text-base">مهندس تكنولوجيا المعلومات | الرياض، السعودية</p>
+      <p class="mt-1">مهندس تكنولوجيا المعلومات | الرياض، السعودية</p>
       <p class="mt-1 text-sm">
         📞 <span dir="ltr" class="inline-block">+966 506498285</span> |
         📧 <a href="mailto:eng.adel.helal91@gmail.com" class="underline">eng.adel.helal91@gmail.com</a>
       </p>
     </div>
 
-    <!-- أزرار التبديل -->
-    <div class="flex justify-center sm:justify-end space-x-2 rtl:space-x-reverse mb-4 sm:mb-0">
+    <div id="englishHeader" class="hidden">
+      <h1 class="text-3xl font-bold">Adel Helal</h1>
+      <p class="mt-1">Information Technology Engineer | Riyadh, Saudi Arabia</p>
+      <p class="mt-1 text-sm">
+        📞 <span dir="ltr" class="inline-block">+966 506498285</span> |
+        📧 <a href="mailto:eng.adel.helal91@gmail.com" class="underline">eng.adel.helal91@gmail.com</a>
+      </p>
+    </div>
+
+    <!-- الأزرار أسفل الهيدر -->
+    <div class="mt-4 flex justify-center gap-2 rtl:space-x-reverse">
       <button id="langToggle" class="bg-white text-blue-900 px-4 py-1 rounded hover:bg-gray-200 text-sm">English</button>
       <button id="modeToggle" class="bg-white text-blue-900 px-4 py-1 rounded hover:bg-gray-200 text-sm">Dark Mode</button>
     </div>
 
   </div>
 </header>
+
 
 
 
@@ -259,10 +269,12 @@
   </footer>
 
   <!-- السكريبتات للتحكم في تبديل اللغة والوضع -->
-  <script>
+ <script>
   const langToggleBtn = document.getElementById('langToggle');
   const arabicVersion = document.getElementById('arabicVersion');
   const englishVersion = document.getElementById('englishVersion');
+  const arabicHeader = document.getElementById('arabicHeader');
+  const englishHeader = document.getElementById('englishHeader');
   const downloadBtn = document.getElementById('downloadBtn');
 
   langToggleBtn.addEventListener('click', () => {
@@ -272,6 +284,8 @@
       // Switch to English
       arabicVersion.classList.add('hidden');
       englishVersion.classList.remove('hidden');
+      arabicHeader.classList.add('hidden');
+      englishHeader.classList.remove('hidden');
       langToggleBtn.textContent = 'العربية';
       document.documentElement.lang = 'en';
       document.documentElement.dir = 'ltr';
@@ -280,6 +294,8 @@
       // Switch to Arabic
       arabicVersion.classList.remove('hidden');
       englishVersion.classList.add('hidden');
+      arabicHeader.classList.remove('hidden');
+      englishHeader.classList.add('hidden');
       langToggleBtn.textContent = 'English';
       document.documentElement.lang = 'ar';
       document.documentElement.dir = 'rtl';
@@ -302,6 +318,7 @@
     }
   });
 </script>
+
 
 </body>
 </html>
